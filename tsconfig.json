@@ -11,9 +11,7 @@
       "path": "./tsconfig.vitest.json"
     }
   ],
-  "include": ["./typed-router.d.ts"],
   "compilerOptions": {
-    "module": "NodeNext",
-    "moduleResolution": "Bundler"
+    "module": "NodeNext"
   }
 }
