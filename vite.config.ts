@@ -6,21 +6,12 @@ import vueJsx from '@vitejs/plugin-vue-jsx'
 import vueDevTools from 'vite-plugin-vue-devtools'
 import VueRouter from 'unplugin-vue-router/vite'
 import AutoImport from 'unplugin-auto-import/vite'
+import Components from 'unplugin-vue-components/vite'
+import { routeConrfig } from './src/router/router-config'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [
-    VueRouter({
-      routesFolder: [
-        {
-          src: 'src/pages/main',
-        },
-        {
-          src: 'src/pages/admin',
-          path: 'admin/',
-        },
-      ],
-      exclude: ['**/components/**'],
-    }),
+    VueRouter(routeConrfig),
     vue(),
     vueJsx(),
     vueDevTools(),
@@ -36,6 +27,10 @@ export default defineConfig({
         'vue',
         'vue-router',
       ],
+    }),
+    Components({
+      directoryAsNamespace: true,
+      collapseSamePrefixes: true,
     }),
   ],
   resolve: {

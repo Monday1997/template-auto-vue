@@ -45,6 +45,7 @@
     "start-server-and-test": "^2.0.10",
     "typescript": "~5.7.3",
     "unplugin-auto-import": "^19.1.0",
+    "unplugin-vue-components": "^28.1.0",
     "unplugin-vue-router": "^0.11.2",
     "vite": "^6.0.11",
     "vite-plugin-vue-devtools": "^7.7.1",

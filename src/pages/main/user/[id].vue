@@ -1,6 +1,8 @@
 <template>
   <div>{{ route.params.id }}</div>
   <div>{{ data1 }}</div>
+  <Com></Com>
+  <ComTwo />
 </template>
 
 <script setup lang="ts">
