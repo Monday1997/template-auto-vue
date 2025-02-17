@@ -1,5 +1,7 @@
 <template>
-  <div>home</div>
+  <header>99999</header>
+  <router-view />
+  <footer>88888</footer>
 </template>
 
 <script lang="ts">
@@ -13,12 +15,3 @@ export default defineComponent({
 </script>
 
 <style scoped></style>
-<route lang="json">
-{
-  "name": "home",
-  "meta": {
-    "title": "首页",
-    "layout": "lhome"
-  }
-}
-</route>
