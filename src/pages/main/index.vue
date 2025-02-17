@@ -17,7 +17,8 @@ export default defineComponent({
 {
   "name": "home",
   "meta": {
-    "title": "首页"
+    "title": "首页",
+    "layout": "lhome"
   }
 }
 </route>

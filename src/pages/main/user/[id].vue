@@ -7,8 +7,14 @@
 
 <script setup lang="ts">
 const route = useRoute('/user/[id]')
-console.log(route.params.id)
 const data1 = ref(13)
 </script>
 
-<style scoped></style>
+<route lang="json">
+{
+  "meta": {
+    "title": "用户页面",
+    "layout": "lhome"
+  }
+}
+</route>

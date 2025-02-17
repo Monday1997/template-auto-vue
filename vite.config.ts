@@ -8,6 +8,7 @@ import VueRouter from 'unplugin-vue-router/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
 import { routeConrfig } from './src/router/router-config'
+import Layouts from 'vite-plugin-vue-layouts'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [
@@ -31,6 +32,9 @@ export default defineConfig({
     Components({
       directoryAsNamespace: true,
       collapseSamePrefixes: true,
+    }),
+    Layouts({
+      layoutsDirs: 'src/Layouts',
     }),
   ],
   resolve: {
